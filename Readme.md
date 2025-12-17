@@ -68,3 +68,40 @@ data class Usuario(
 - Si es estrictamente necesario realizar operaciones en el hilo principal (por ejemplo, durante pruebas o desarrollo), se puede utilizar el método `allowMainThreadQueries()` al construir la base de datos. Sin embargo, esto no es recomendable para aplicaciones en producción, ya que puede afectar negativamente el rendimiento y la experiencia de usuario.
 
 Para más información, consulte la [documentación oficial de Room](https://developer.android.com/training/data-storage/room).
+
+## Configurar GitHub Copilot (MCP) de forma segura
+
+Para usar GitHub Copilot en JetBrains, el plugin puede requerir un archivo local `mcp.json` en `~/.config/github-copilot/intellij/mcp.json` con un token. Este repositorio incluye scripts para crear ese archivo de forma segura sin guardar tokens en el repositorio.
+
+Archivos añadidos:
+- `scripts/setup_copilot_mcp.sh` — crea `mcp.json` a partir de la variable de entorno `GITHUB_COPILOT_TOKEN`.
+- `scripts/setup_copilot_mcp_from_keyring.sh` — crea `mcp.json` leyendo el token desde el keyring (libsecret/secret-tool).
+- `.github/mcp.json.template` — plantilla sin token para documentar el formato.
+
+Recomendación rápida (temporal):
+1. En tu terminal, exporta tu token (temporalmente):
+
+```bash
+export GITHUB_COPILOT_TOKEN="PASTE_YOUR_TOKEN_HERE"
+bash scripts/setup_copilot_mcp.sh
+```
+
+Recomendación segura (recomendada):
+1. Guarda el token en el keyring (solo una vez):
+
+```bash
+secret-tool store --label='GitHub Copilot Token' copilot token
+# pega el token cuando se te pida
+```
+2. Crea `mcp.json` desde el keyring:
+
+```bash
+bash scripts/setup_copilot_mcp_from_keyring.sh
+```
+
+Buenas prácticas:
+- Nunca subas tu token al repositorio. No incluyas `~/.config/github-copilot/intellij/mcp.json` en commits.
+- Si un token quedó expuesto, rótalo en GitHub y elimina cualquier copia del archivo.
+- Usa permisos restrictivos para `mcp.json`: el script aplica `chmod 600`.
+
+Si trabajas en un equipo y necesitas estandarizar el aprovisionamiento, puedo ayudar a crear un script de inicialización adicional o instrucciones para el equipo.

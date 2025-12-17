@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+# No versionar archivos de configuración con tokens (ejemplo local de Copilot)
+# Nota: la ruta real es en $HOME, esta línea sirve como recordatorio en el repo
+.config/github-copilot/intellij/mcp.json
