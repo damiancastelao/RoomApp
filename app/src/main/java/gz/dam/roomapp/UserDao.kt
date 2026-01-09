@@ -21,6 +21,10 @@ interface UserDao {
             "last_name LIKE :last LIMIT 1")
     fun findByName(first: String, last: String): User
 
+    @Query("SELECT * FROM user WHERE date LIKE :first AND " +
+            "last_name LIKE :last LIMIT 1")
+    fun findByDate(first: String, last: String): User
+
     // Note 5: Inserta uno o varios usuarios en la base de datos.
     @Insert
     fun insertAll(vararg users: User)
