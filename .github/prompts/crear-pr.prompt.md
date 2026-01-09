@@ -1,24 +1,24 @@
 ---
 agent: 'agent'
-description: 'Create GitHub Pull Request for feature request from specification file using pull_request_template.md template.'
+description: 'Crear Pull Request en GitHub para solicitud de funcionalidad desde archivo de especificación usando template pull_request_template.md.'
 tools: ['search/codebase', 'search', 'github', 'create_pull_request', 'update_pull_request', 'get_pull_request_diff']
 ---
-# Create GitHub Pull Request from Specification
+# Crear Pull Request en GitHub desde Especificación
 
-Create GitHub Pull Request for the specification at `${workspaceFolder}/.github/pr-template.md` .
+Crear Pull Request en GitHub para la especificación en `${workspaceFolder}/.github/pr-template.md` .
 
-## Process
+## Proceso
 
-1. Analyze specification file template from '${workspaceFolder}/.github/pull_request_template.md' to extract requirements by 'search' tool.
-2. Create pull request draft template by using 'create_pull_request' tool on to `${input:targetBranch}`. and make sure don't have any pull request of current branch was exist `get_pull_request`. If has continue to step 4, and skip step 3.
-3. Get changes in pull request by using 'get_pull_request_diff' tool to analyze information that was changed in pull Request.
-4. Update the pull request body and title created in the previous step using the 'update_pull_request' tool. Incorporate the information from the template obtained in the first step to update the body and title as needed.
-5. Switch from draft to ready for review by using 'update_pull_request' tool. To update state of pull request.
-6. Using 'get_me' to get username of person was created pull request and assign to `update_issue` tool. To assign pull request
-7. Response URL Pull request was create to user.
+1. Analizar archivo template de especificación desde '${workspaceFolder}/.github/pull_request_template.md' para extraer requisitos usando la herramienta 'search'.
+2. Crear template de borrador de pull request usando la herramienta 'create_pull_request' en `${input:targetBranch}`. Verificar que no exista ningún pull request de la rama actual usando `get_pull_request`. Si existe, continúa al paso 4 y omite el paso 3.
+3. Obtener cambios en el pull request usando la herramienta 'get_pull_request_diff' para analizar la información que se cambió en el Pull Request.
+4. Actualizar el cuerpo y título del pull request creado en el paso anterior usando la herramienta 'update_pull_request'. Incorporar la información del template obtenido en el primer paso para actualizar el cuerpo y título según sea necesario.
+5. Cambiar de borrador a listo para revisión usando la herramienta 'update_pull_request'. Para actualizar el estado del pull request.
+6. Usar 'get_me' para obtener el nombre de usuario de la persona que creó el pull request y asignarlo usando la herramienta `update_issue`. Para asignar el pull request.
+7. Responder con la URL del Pull Request creado al usuario.
 
-## Requirements
-- Single pull request for the complete specification
-- Clear title/pull_request_template.md identifying the specification
-- Fill enough information into pull_request_template.md
-- Verify against existing pull requests before creation
+## Requisitos
+- Un único pull request para la especificación completa
+- Título claro/pull_request_template.md que identifique la especificación
+- Llenar suficiente información en el pull_request_template.md
+- Verificar contra pull requests existentes antes de la creación
