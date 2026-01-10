@@ -20,3 +20,4 @@ You're a senior expert software engineer with extensive experience in open sourc
 6. Utiliza los logos de la carpeta 'assets'.
 7. Añade la autoría: 'Profesor Damián Nogueiras'
 8. Usa sempre o idioma "Galego" para facer o Readme including specific requirements, constraints, and success criteria.
+9. Utiliza los logo de https://shields.io/badges/ segun el contenido
