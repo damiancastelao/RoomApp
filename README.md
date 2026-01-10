@@ -1,8 +1,28 @@
-![RoomApp Logo](./assets/logoAzul400.png)
+![RoomApp Logo](./assets/firma.png)
 
 # RoomApp
 
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-purple?style=flat-square&logo=kotlin)](https://kotlinlang.org/)
+[![Android](https://img.shields.io/badge/Android-8.0+-green?style=flat-square&logo=android)](https://www.android.com/)
+[![API](https://img.shields.io/badge/API-26%2B-brightgreen?style=flat-square)](https://android-arsenal.com/api?level=26)
+[![Room Database](https://img.shields.io/badge/Room-Database-blue?style=flat-square&logo=android)](https://developer.android.com/training/data-storage/room)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack-Compose-blue?style=flat-square)](https://developer.android.com/jetpack/compose)
+[![Version](https://img.shields.io/badge/Version-1.0-blue?style=flat-square)](https://github.com/damiancastelao/RoomApp/releases)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)](https://github.com/damiancastelao/RoomApp)
+[![JDK](https://img.shields.io/badge/JDK-11%2B-orange?style=flat-square&logo=openjdk)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+[![Gradle](https://img.shields.io/badge/Gradle-8.x-blue?style=flat-square&logo=gradle)](https://gradle.org/)
+
 Aplicación Android educativa que demostra a persistencia de datos usando a librería **Room Database**. Este proxecto presenta as mellores prácticas para traballar con bases de datos locais en Android usando Kotlin e Jetpack Compose, con exemplos prácticos e ben documentados.
+
+### Características Técnicas
+
+[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite)](https://www.sqlite.org/)
+[![Coroutines](https://img.shields.io/badge/Coroutines-Async-FF6D00?style=flat-square)](https://kotlinlang.org/docs/coroutines-overview.html)
+[![KSP](https://img.shields.io/badge/KSP-Processing-7F52FF?style=flat-square)](https://kotlinlang.org/docs/ksp-overview.html)
+[![Material Design 3](https://img.shields.io/badge/Material-Design%203-6200EE?style=flat-square)](https://m3.material.io/)
+[![MVVM](https://img.shields.io/badge/Architecture-MVVM-2196F3?style=flat-square)](https://developer.android.com/topic/libraries/architecture/viewmodel)
+[![Clean Code](https://img.shields.io/badge/Clean-Code-FF6B6B?style=flat-square)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
 ## Comezar Rápidamente
 
@@ -265,11 +285,12 @@ Características planificadas:
 
 | Propiedad | Valor |
 |-----------|-------|
-| **Linguaxe** | Kotlin |
-| **Versión** | 1.0 |
-| **API Mínima** | 26 (Android 8.0) |
-| **API Obxectivo** | 36 (Android 15) |
-| **Estado** | Proxecto Educativo Activo |
+| **Linguaxe** | [![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-purple?style=flat-square&logo=kotlin)](https://kotlinlang.org/) |
+| **Versión** | [![Version](https://img.shields.io/badge/Version-1.0-blue?style=flat-square)](https://github.com/damiancastelao/RoomApp/releases) |
+| **API Mínima** | [![API](https://img.shields.io/badge/API-26%2B-brightgreen?style=flat-square)](https://android-arsenal.com/api?level=26) |
+| **API Obxectivo** | [![Target API](https://img.shields.io/badge/Target-36-green?style=flat-square)](https://developer.android.com/about/versions/15) |
+| **Estado** | [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)](https://github.com/damiancastelao/RoomApp) |
+| **Licencia** | [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE) |
 
 ## Autor
 
