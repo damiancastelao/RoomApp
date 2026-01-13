@@ -1,4 +1,4 @@
-## Lista de Verificación para Pull Request
+## Lista de Verificación para Pull Request 
 
 - [ ] He leído y seguido las directrices de [CONTRIBUTING.md](https://github.com/github/awesome-copilot/blob/main/CONTRIBUTING.md).
 - [ ] Mi contribución agrega un nuevo archivo de instrucción, prompt o chat mode en el directorio correcto.
