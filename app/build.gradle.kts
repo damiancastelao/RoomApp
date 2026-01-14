@@ -8,9 +8,7 @@ plugins {
 
 android {
     namespace = "gz.dam.roomapp"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "gz.dam.roomapp"
